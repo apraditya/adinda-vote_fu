@@ -1,0 +1,3 @@
+= adinda-vote_fu
+
+This project rocks and uses MIT-LICENSE.
