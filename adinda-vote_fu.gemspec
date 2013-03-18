@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "adinda-vote_fu"
 
-  s.files       = `git ls-files`.split("\n")
+  s.files       = `git ls-files`.split("\n") - `git ls-files -- examples/*`.split("\n")
   s.test_files  = `git ls-files -- {spec}/*`.split("\n")
 
   s.require_path = ["lib"]
@@ -26,4 +26,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "guard-spork"
+  s.add_development_dependency "factory_girl_rails"
+  s.add_development_dependency "pry-debugger"
 end
